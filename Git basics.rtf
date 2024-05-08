@@ -1,0 +1,131 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red12\green12\blue12;\red255\green255\blue255;\red194\green194\blue194;
+\red35\green35\blue35;\red20\green152\blue106;}
+{\*\expandedcolortbl;;\cssrgb\c5098\c5098\c5098;\cssrgb\c100000\c100000\c100000;\cssrgb\c80392\c80392\c80392;
+\cssrgb\c18431\c18431\c18431;\cssrgb\c0\c65098\c49020;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11905\paperh16837\margl1133\margr1133\margb1133\margt1133
+\deftab720
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\fs40 \cf2 \cb3 \up0 \nosupersub \ulnone 1. \'dcberpr\'fcfen der \'c4nderungen\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 Bevor Sie \'c4nderungen committen, k\'f6nnen Sie sich einen \'dcberblick verschaffen, was ge\'e4ndert wurde:\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf4 \cb5 bash\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 Copy code\cf4 \cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf3 \cb2 git status\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 \cb3 Dieser Befehl zeigt Ihnen die Dateien, die ge\'e4ndert wurden oder neu sind und noch nicht zum Tracking hinzugef\'fcgt wurden.\
+\pard\pardeftab720\sa160\partightenfactor0
+
+\fs40 \cf2 2. Dateien zum Staging-Bereich hinzuf\'fcgen\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 Um Dateien zum Commit vorzubereiten, f\'fcgen Sie sie zum Staging-Bereich hinzu:\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf4 \cb5 bash\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 Copy code\cf4 \cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf3 \cb2 git add .\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 \cb3 oder\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf4 \cb5 bash\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 Copy code\cf4 \cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf3 \cb2 git add <Dateipfad>\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 \cb3 Verwenden Sie 
+\fs28 \cf2 git add .
+\fs32 \cf2  um alle ge\'e4nderten Dateien hinzuzuf\'fcgen, oder ersetzen Sie 
+\fs28 \cf2 .
+\fs32 \cf2  durch spezifische Dateipfade, wenn Sie nur bestimmte \'c4nderungen committen m\'f6chten.\
+\pard\pardeftab720\sa160\partightenfactor0
+
+\fs40 \cf2 3. \'c4nderungen committen\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 Nachdem Sie die Dateien hinzugef\'fcgt haben, committen Sie die \'c4nderungen mit einer aussagekr\'e4ftigen Nachricht:\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf4 \cb5 bash\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 Copy code\cf4 \cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf3 \cb2 git commit -m \cf6 \cb2 "Eine klare Beschreibung der \'c4nderungen"\cf3 \cb2 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 \cb3 Die Commit-Nachricht sollte kurz und pr\'e4zise sein und erkl\'e4ren, was in diesem Commit ge\'e4ndert wurde.\
+\pard\pardeftab720\sa160\partightenfactor0
+
+\fs40 \cf2 4. \'c4nderungen zum Remote-Repository pushen\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 Nachdem Sie Ihre \'c4nderungen committet haben, pushen Sie sie zum Remote-Repository, um sie sicher zu speichern und f\'fcr andere verf\'fcgbar zu machen:\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf4 \cb5 bash\cf4 \cb3 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 Copy code\cf4 \cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf3 \cb2 git push origin main\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 \cb3 Dieser Befehl sendet Ihre Commits zum 
+\fs28 \cf2 main
+\fs32 \cf2  Branch Ihres Remote-Repositories auf GitHub.\
+\pard\pardeftab720\sa160\partightenfactor0
+
+\fs40 \cf2 Zus\'e4tzliche Tipps:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\fs32 \cf2 \cb1 \up0 \nosupersub \ulnone {\listtext	\uc0\u8226 	}\cf2 \cb3 \up0 \nosupersub \ulnone Regelm\'e4\'dfiges Pullen: Um Konflikte zu vermeiden, ist es eine gute Praxis, regelm\'e4\'dfig den aktuellen Stand des Remote-Repositories zu pullen, besonders bevor Sie mit der Arbeit beginnen oder wenn Sie in einem Team arbeiten:
+\fs24 \cf4 \cb5 bash\cf4 \cb3 \uc0\u8232 \u8232 \cf4 \cb5 Copy code\cf4 \cb3 \uc0\u8232 
+\fs28 \cf3 \cb2 git pull origin main\
+\pard\tx220\tx657\pardeftab720\li657\fi-658\partightenfactor0
+\ls1\ilvl0\cf2 \cb1 \up0 \nosupersub \ulnone {\listtext	\uc0\u8226 	}\cf2 \cb3 \up0 \nosupersub \ulnone \uc0\u8232 \cf2 \cb2 \uc0\u8232 
+\fs32 \cf2 \cb3 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \cb1 \up0 \nosupersub \ulnone {\listtext	\uc0\u8226 	}\cf2 \cb3 \up0 \nosupersub \ulnone Branches nutzen: F\'fcr gr\'f6\'dfere Features oder \'c4nderungen ist es ratsam, separate Branches zu verwenden, statt direkt im 
+\fs28 \cf2 main
+\fs32 \cf2  Branch zu arbeiten. Dies h\'e4lt Ihren 
+\fs28 \cf2 main
+\fs32 \cf2  Branch stabil und die Arbeit organisiert:
+\fs24 \cf4 \cb5 bash\cf4 \cb3 \uc0\u8232 \u8232 \cf4 \cb5 Copy code\cf4 \cb3 \uc0\u8232 
+\fs28 \cf3 \cb2 git checkout -b feature-branch-name\
+\pard\tx220\tx657\pardeftab720\li657\fi-658\partightenfactor0
+\ls1\ilvl0\cf2 \cb1 \up0 \nosupersub \ulnone {\listtext	\uc0\u8226 	}\cf2 \cb3 \up0 \nosupersub \ulnone \uc0\u8232 \cf2 \cb2 \uc0\u8232 \cf2 \cb3 \uc0\u8232 
+\fs32 \cf2 Nachdem die Arbeit im Feature-Branch abgeschlossen ist, k\'f6nnen Sie ihn zur\'fcck in den 
+\fs28 \cf2 main
+\fs32 \cf2  Branch mergen.\
+\pard\pardeftab720\partightenfactor0
+\cf2 Diese Befehle stellen die Grundlagen dar, um Ihre Arbeit mit Git effektiv zu verwalten und Ihr Repository auf dem neuesten Stand zu halten.}
