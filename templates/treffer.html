@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Luna Project Search</title>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/Neve.png') }}" class="header-image">
+        <h1>Luna Project Search</h1>
+    </header>
+    <table>
+        <tr>
+            <th>Select</th>
+            <th>Project Name</th>
+            <th>Size (GB)</th>
+            <th>Open in Luna</th>
+            <th>Open in Finder</th>
+        </tr>
+        {% for project in projects %}
+        <tr>
+            <td><input type="checkbox" name="project" value="{{ project.path }}"></td>
+            <td>{{ project.name }}</td>
+            <td>{{ project.size }}</td>
+            <td><button onclick="openLuna('{{ project.escaped_path }}')">Open</button></td>
+            <td><button onclick="openInFinder('{{ project.escaped_path }}')">Show in Finder</button></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
